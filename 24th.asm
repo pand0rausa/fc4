@@ -1,3 +1,5 @@
+global _start
+_start:
 js 0x35
 xor [eax+0x43],edi
 xor [eax+0x35],bh
