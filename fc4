@@ -39,4 +39,6 @@ Line number 54 out of range; key.asm has 53 lines.
 Breakpoint 1 at 0x804811e: file key.asm, line 52.
 (gdb) run
 
+(gdb) x/5s $esp
+
 Recover 128-bit reg key
