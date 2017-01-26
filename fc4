@@ -21,6 +21,13 @@ prepend:
 global _start
 _start:
 
+46 password:   << insert
+47  lodsb
+
+49  stosb
+50  loop password    << insert
+
+
 nasm -f elf shellcode.asm1 -g
 
 ld -o key shellcode.o
