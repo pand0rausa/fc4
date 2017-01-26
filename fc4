@@ -17,6 +17,10 @@ ndisasm -b 32 shellcode > shellcode.asm
 
 sed 's/^............................//' shellcode.asm > shellcode.asm1
 
+prepend:
+global _start
+_start:
+
 nasm -f elf shellcode.asm1 -g
 
 ld -o key shellcode.o
