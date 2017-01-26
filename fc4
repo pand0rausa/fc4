@@ -36,7 +36,7 @@ gdb ./key
 int3(gdb) l
 Line number 54 out of range; key.asm has 53 lines.
 (gdb) b 52
-Breakpoint 1 at 0x804811e: file key.asm, line 52.
+Breakpoint 1 
 (gdb) run
 
 (gdb) x/5s $esp
