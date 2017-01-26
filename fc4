@@ -25,7 +25,7 @@ _start:
 47  lodsb
 
 49  stosb
-50  loop password    << insert
+50  loop password    << replace
 
 
 nasm -f elf shellcode.asm1 -g
