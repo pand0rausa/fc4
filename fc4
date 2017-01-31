@@ -2,7 +2,7 @@ Browser console (F12):
 　
 var srvstr='Tuesday 29th of November 2016';
 var data=hexMD5("\x74\x72\x79\x68\x61\x72\x64\x65\x72"+ srvstr);
-alert(data);console.log(2);
+alert(data);console.log(data);
 
 
 Key =
