@@ -59,7 +59,7 @@ scriptFile = ("""#! /bin/bash
 /bin/sed -i 's/^............................//' /tmp/shellcode.asm 
 /bin/sed -i '1 i\_start\:' /tmp/shellcode.asm 
 /bin/sed -i '1 i\global \_start' /tmp/shellcode.asm 
-/bin/sed -i "/lodsb/ { N; s/lodsb\n/password:&/ }" /tmp/shellcode.asm
+/bin/sed -i "/lodsb/ { N; s/lodsb\\n/password:&/ }" /tmp/shellcode.asm
 /bin/sed -i 's/loop 0xb7/loop password/g' /tmp/shellcode.asm 
 /usr/bin/nasm -f elf /tmp/shellcode.asm -g 
 ld -o key shellcode.o
