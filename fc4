@@ -29,7 +29,7 @@ _start:
 50  loop password    << replace
 
 
-nasm -f elf shellcode.asm1 -g
+nasm -f elf shellcode.asm -g
 
 ld -o key shellcode.o
 
