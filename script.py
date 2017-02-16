@@ -466,6 +466,10 @@ scriptFile = ("""#! /bin/bash
 /bin/sed -i 's/loop ..../loop password/g' /tmp/shellcode.asm 
 /usr/bin/nasm -f elf /tmp/shellcode.asm -g 
 ld -o /tmp/key /tmp/shellcode.o
+
+# Link 32-bit on a 64-bit system
+# ld -m elf_i386 -s -o key shellcode.o
+
 gdb --command=/tmp/gdbScript.txt /tmp/key
 """)
 file2.write(scriptFile)
