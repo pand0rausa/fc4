@@ -32,6 +32,8 @@ _start:
 nasm -f elf shellcode.asm -g
 
 ld -o key shellcode.o
+# Link 32-bit on a 64-bit system
+# ld -m elf_i386 -s -o key shellcode.o
 
 gdb ./key
 
