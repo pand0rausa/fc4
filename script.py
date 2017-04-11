@@ -3,7 +3,7 @@
 import urllib, httplib, hashlib, binascii, requests, base64, re, os
 
 # Fetch srvstr string from server
-proxy={"http":"http://proxy.wellsfargo.com:8080"}
+proxy={"http":"http://proxy.x.com:8080"}
 url = "http://fc4.me"
 req = urllib.urlopen(url, proxies=proxy) 
 reg = re.compile('srvstr=\'(.*?)\';')
